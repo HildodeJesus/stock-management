@@ -1,6 +1,6 @@
 {
 	"files.associations": {
 		"*.ejs": "html",
-		"locale.h": "c"
+		"registernewoutput.h": "c"
 	}
 }

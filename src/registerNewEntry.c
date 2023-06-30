@@ -4,7 +4,7 @@
 
 float *registerNewEntry(float fuels[3])
 {
-  int skip = 1, type, currentValue;
+  int skip = 1, type, i;
   float currentWeight;
 
   while (skip == 1)
@@ -19,27 +19,32 @@ float *registerNewEntry(float fuels[3])
     {
     case 1:
     {
+
       fuels[0] = fuels[0] + (currentWeight / 0.783); // A cada 783g(0.783kg) um litro de Alcool
-      printf("Álcool cadastrado com sucesso!");
+
+      printf("\nÁlcool cadastrado com sucesso!");
+
       break;
     }
     case 2:
     {
       fuels[1] = fuels[1] + (currentWeight / 0.75); // A cada 750g(0.75kg) um litro de gasolina
-      printf("Gasolina cadastrada com sucesso!");
+
+      printf("\nGasolina cadastrada com sucesso!");
 
       break;
     }
     case 3:
     {
       fuels[2] = fuels[2] + (currentWeight / 0.817); // A cada 817g(0.817kg) um litro de Querosene
-      printf("Querosene cadastrado com sucesso!");
+
+      printf("\nQuerosene cadastrado com sucesso!");
       break;
     }
 
     default:
     {
-      printf("Opção inválida!");
+      printf("\nOpção inválida!");
       break;
     }
     }
